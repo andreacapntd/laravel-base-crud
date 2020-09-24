@@ -2,15 +2,46 @@
 
 @section('content')
 
-  <ul>
-    @foreach ($paganti as $pagante)
-      <li>
+    {{-- Main --}}
+    
+    <section id="name">
 
-        {{ $pagante -> name}}
-        {{ $pagante -> lastname}}
+      <h2>Name</h2>
 
-      </li>
-    @endforeach
-  </ul>
+      <ul>
+
+        @foreach ($paganti as $pagante)
+
+          <li>
+
+            {{ $pagante -> name}}
+
+          </li>
+
+        @endforeach
+
+      </ul>
+
+    </section>
+
+    <section id="lastname">
+
+      <h2> Lastname</h2>
+
+      <ul>
+
+        @foreach ($paganti as $pagante)
+
+          <li>
+
+            {{ $pagante -> lastname}}
+
+          </li>
+
+        @endforeach
+
+      </ul>
+
+    </section>
 
 @endsection
