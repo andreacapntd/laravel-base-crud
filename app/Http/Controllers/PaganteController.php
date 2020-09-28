@@ -11,7 +11,7 @@ class PaganteController extends Controller
   public function index() {
 
     $paganti = PaganteModel::all();
-    return view('main_content', compact('paganti'));
+    return view('paganti', compact('paganti'));
 
   }
 

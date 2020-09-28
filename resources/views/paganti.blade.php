@@ -3,7 +3,7 @@
 @section('content')
 
     {{-- Main --}}
-    
+
     <section id="name">
 
       <h2>Name</h2>
