@@ -3,45 +3,55 @@
 @section('content')
 
     {{-- Main --}}
+    <div class="sub_title">
 
-    <section id="name">
+      <h2>PAGANTI</h2>
 
-      <h2>Name</h2>
+    </div>
 
-      <ul>
 
-        @foreach ($paganti as $pagante)
+    <section id="paganti">
 
-          <li>
+      <section id="name">
 
-            {{ $pagante -> name}}
+        <h3>Name</h3>
 
-          </li>
+        <ul>
 
-        @endforeach
+          @foreach ($paganti as $pagante)
 
-      </ul>
+            <li>
 
+              {{ $pagante -> name}}
+
+            </li>
+
+          @endforeach
+
+        </ul>
+
+      </section>
+
+      <section id="lastname">
+
+        <h3> Lastname</h3>
+
+        <ul>
+
+          @foreach ($paganti as $pagante)
+
+            <li>
+
+              {{ $pagante -> lastname}}
+
+            </li>
+
+          @endforeach
+
+        </ul>
+
+      </section>
     </section>
 
-    <section id="lastname">
-
-      <h2> Lastname</h2>
-
-      <ul>
-
-        @foreach ($paganti as $pagante)
-
-          <li>
-
-            {{ $pagante -> lastname}}
-
-          </li>
-
-        @endforeach
-
-      </ul>
-
-    </section>
 
 @endsection

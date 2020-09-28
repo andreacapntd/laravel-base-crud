@@ -13,4 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// PAGANTI
 Route::get('/', 'PaganteController@index') -> name('index');
+
+// PAGAMENTI
+Route::get('/pagamenti', 'PagamentoController@index') -> name('pagamento_index');
+
+Route::get('/pagamento/delete/{id}' , 'PagamentoController@destroy') -> name('pagamento_destroy');
+
+Route::get('/pagamento/edit/{id}', 'PagamentoController@edit') -> name('pagamento_edit');
+Route::post('/pagamento/update/{id}', 'PagamentoController@update') ->name('pagamento_update');

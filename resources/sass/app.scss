@@ -13,16 +13,44 @@
 header {
 
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 
+  height: 70px;
   width: 100%;
 
-  .title {
+  padding: 0 50px;
 
-    font-size: 40px;
-    text-transform: uppercase;
+  color: #fff;
+  background-color: black;
 
+  nav {
+
+    ul {
+
+      display: flex;
+
+      list-style-type: none;
+
+      li {
+
+        margin-right: 16px;
+
+        font-size: 25px;
+
+        a {
+
+          text-decoration: none;
+          color: #fff;
+
+        }
+
+      }
+
+    }
   }
+
+
 }
 
 // Main
@@ -30,19 +58,69 @@ header {
 main {
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   width: 100%;
 
-  h2 {
+  .sub_title {
 
-    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+
+    width: 100%;
+
+    margin: 45px 0;
 
   }
 
-  section {
+  #paganti {
 
-    margin: 40px 40px 0 0;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    h3 {
+
+      margin-bottom: 25px;
+
+    }
+
+    section {
+
+      margin: 40px 40px 0 0;
+
+      ul {
+
+        list-style-type: none;
+        font-size: 20px;
+
+        li {
+
+          margin-bottom: 8px;
+
+        }
+
+      }
+    }
+  }
+
+  #pagamenti {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 45px 0;
+
+    h1 {
+
+      font-size: 30px;
+
+      margin-bottom: 45px;
+
+    }
 
     ul {
 
@@ -57,4 +135,23 @@ main {
 
     }
   }
+
+  #form {
+
+    margin: 45px 0;
+
+    h1 {
+
+      font-size: 30px;
+
+      margin-bottom: 45px;
+
+    }
+
+    .form_group {
+
+      margin: 20px 0;
+    }
+  }
+
 }
