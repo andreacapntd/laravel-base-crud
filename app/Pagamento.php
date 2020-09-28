@@ -13,6 +13,7 @@ class Pagamento extends Model
 
     'status',
     'price'
+    
   ];
-  
+
 }

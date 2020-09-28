@@ -9,6 +9,7 @@
     <ul>
 
       @foreach ($pagamenti as $pagamento)
+
         <li>
 
           {{ $pagamento -> status}}
@@ -22,7 +23,6 @@
       @endforeach
 
     </ul>
-
+    
   </section>
-
 @endsection
