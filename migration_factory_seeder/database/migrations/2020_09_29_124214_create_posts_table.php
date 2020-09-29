@@ -24,6 +24,7 @@ class CreatePostsTable extends Migration
             $table -> integer('dislike');
 
             $table->timestamps();
+
         });
     }
 
@@ -34,6 +35,8 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+
+      Schema::dropIfExists('posts');
+      
     }
 }
